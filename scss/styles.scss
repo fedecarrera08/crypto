@@ -1,4 +1,4 @@
-    *{
+*{
     margin: 0px;
     padding: 0px;  
     font-family: 'Rubik', sans-serif;
@@ -110,6 +110,10 @@ $h5: 1.7rem;
 }
 
 /* SECCION SECUNDARIA */
+.caja{ 
+    padding: 2rem;
+}
+
 .caja-criptomonedas{
     justify-content: space-around;
 }
@@ -119,7 +123,7 @@ $h5: 1.7rem;
     text-align: center;
     border-radius: 1rem;
     border: .3rem solid $bordes-cajas;   
-    margin: 1rem;
+    margin: 1rem 0rem 1rem 0rem;
 
     .articulosPrincipales__h2{
         font-size: $h2;

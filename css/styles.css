@@ -77,6 +77,9 @@ body {
   font-weight: bolder; }
 
 /* SECCION SECUNDARIA */
+.caja {
+  padding: 2rem; }
+
 .caja-criptomonedas {
   justify-content: space-around; }
 
@@ -85,7 +88,7 @@ body {
   text-align: center;
   border-radius: 1rem;
   border: 0.3rem solid #0076A8;
-  margin: 1rem; }
+  margin: 1rem 0rem 1rem 0rem; }
   .articulosPrincipales .articulosPrincipales__h2 {
     font-size: 3.2rem;
     color: #03045e; }

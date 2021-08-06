@@ -102,9 +102,7 @@ body {
   @media (min-width: 768px) {
     .articulosPrincipales .articulosPrincipales__px-img-articles {
       width: 300px;
-      height: 150px; }
-    .articulosPrincipales .articulosPrincipales {
-      margin: 1rem; } }
+      height: 150px; } }
 
 /* SECCIÓN ASIDE */
 .aside {

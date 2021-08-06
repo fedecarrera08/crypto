@@ -83,9 +83,9 @@ body {
 .articulosPrincipales {
   background-color: #ffffff;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: 0.3rem solid #0076A8;
-  margin-top: 1rem; }
+  margin: 1rem; }
   .articulosPrincipales .articulosPrincipales__h2 {
     font-size: 3.2rem;
     color: #03045e; }
@@ -542,17 +542,13 @@ body {
   .footer .redes {
     flex: 1;
     display: flex;
-    flex-direction: column;
     height: auto;
     list-style-type: none; }
 
 /* ALTO, DIRECCIÓN Y ESTILO */
-@media (min-width: 480px) {
+@media (min-width: 280px) {
   .footer {
     height: 15rem; }
-    .footer .redes {
-      justify-content: center;
-      flex-direction: row; }
     .footer .redes .redes__lista {
       transition-timing-function: ease;
       transition: .2s;

@@ -78,7 +78,7 @@ body {
 
 /* SECCION SECUNDARIA */
 .caja {
-  padding: 2rem; }
+  padding: 1rem 2rem 1rem 2rem; }
 
 .caja-criptomonedas {
   justify-content: space-around; }
@@ -129,14 +129,14 @@ body {
 .seccionInformes {
   border-top: .3rem solid black;
   border-bottom: .3rem solid black;
-  margin: 1rem; }
+  padding: 1rem; }
   .seccionInformes .informes-tituloParrafos {
     padding-left: 4rem;
     padding-top: 4rem; }
 
 .informes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-columns: repeat(auto-fill, 280px);
   grid-template-rows: repeat(auto-fill, 1fr);
   justify-content: center;
   grid-row-gap: 1rem;
@@ -145,6 +145,8 @@ body {
   margin: 1rem;
   text-align: center; }
   .informes .articuloInformes {
+    width: auto;
+    height: 210px;
     border-radius: 1rem;
     background-color: #ffffff;
     border: 0.3rem solid #0076A8;
@@ -293,10 +295,6 @@ body {
 
 /* SECCIÓN OPINIONES */
 .seccionOpiniones {
-  border-top: .3rem solid black;
-  border-bottom: .3rem solid black;
-  background-color: #ffffff;
-  margin: 1rem;
   padding: 1rem; }
   .seccionOpiniones .opiniones-tituloParrafos {
     flex: 1;
@@ -305,16 +303,13 @@ body {
   .seccionOpiniones .cajas-opiniones {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem;
     flex-direction: column;
     justify-content: space-around; }
-    .seccionOpiniones .cajas-opiniones .articulosPrincipales {
-      margin: 1rem; }
     .seccionOpiniones .cajas-opiniones .card .card-header .opiniones-img {
       margin: .3rem;
       border-radius: 1rem;
-      width: 350px;
-      height: 350px; }
+      width: auto;
+      height: auto; }
     .seccionOpiniones .cajas-opiniones .card .card-body .card-title {
       color: orange; }
     .seccionOpiniones .cajas-opiniones .card .card-body .h3 {
@@ -534,31 +529,40 @@ body {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 20rem;
+  padding: 1rem;
+  width: auto;
+  height: 10rem;
   border-top: 0.3rem solid #000000;
   border-bottom: 0.3rem solid #000000;
-  align-items: center;
-  text-align: center; }
+  align-items: center; }
   .footer .redes {
     flex: 1;
     display: flex;
+    flex-direction: row;
     height: auto;
+    padding: 1rem;
     list-style-type: none; }
+  .footer .creador {
+    flex: 1;
+    text-align: center;
+    border-left: 2px solid #000000;
+    padding: .8rem; }
+    .footer .creador .creador__h4 {
+      font-size: 2.1rem;
+      padding: 0.2rem; }
 
 /* ALTO, DIRECCIÓN Y ESTILO */
-@media (min-width: 280px) {
+@media (min-width: 480px) {
   .footer {
     height: 15rem; }
-    .footer .redes .redes__lista {
-      transition-timing-function: ease;
-      transition: .2s;
-      padding: 1rem; }
+    .footer .redes {
+      justify-content: center; }
+      .footer .redes .redes__lista {
+        transition-timing-function: ease;
+        transition: .2s;
+        padding: 1rem; }
     .footer .redes .redes__lista:hover {
       transform: scale(1.1, 1.1); }
     .footer .creador {
-      flex: 1;
-      border-left: 2px solid #000000; }
-    .footer .creador__h4 {
-      font-size: 2.1rem;
-      padding: 0.2rem; } }
+      padding: 1rem;
+      margin: 1rem; } }

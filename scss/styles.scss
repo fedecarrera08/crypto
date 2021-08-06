@@ -111,7 +111,7 @@ $h5: 1.7rem;
 
 /* SECCION SECUNDARIA */
 .caja{ 
-    padding: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 .caja-criptomonedas{
@@ -182,7 +182,7 @@ $h5: 1.7rem;
 .seccionInformes{
     border-top: .3rem solid black;
     border-bottom: .3rem solid black;
-    margin: 1rem;
+    padding: 1rem;
 
     .informes-tituloParrafos
     {
@@ -193,7 +193,7 @@ $h5: 1.7rem;
 
 .informes{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px); 
+    grid-template-columns: repeat(auto-fill, 280px); 
     grid-template-rows: repeat(auto-fill, 1fr);
     justify-content: center;
     grid-row-gap: 1rem;
@@ -203,6 +203,8 @@ $h5: 1.7rem;
     text-align: center;
 
     .articuloInformes{
+        width: auto;
+        height: 210px;
         border-radius: 1rem;
         background-color: $colorFondos-articulos;
         border: 0.3rem solid $bordes-cajas;
@@ -433,10 +435,6 @@ $h5: 1.7rem;
 
 /* SECCIÓN OPINIONES */
 .seccionOpiniones{
-    border-top: .3rem solid black;
-    border-bottom: .3rem solid black;
-    background-color: #ffffff;
-    margin: 1rem;
     padding: 1rem;
 
     .opiniones-tituloParrafos{
@@ -448,22 +446,16 @@ $h5: 1.7rem;
     .cajas-opiniones{
         display: flex;
         flex-wrap: wrap;
-        margin: 1rem;
         flex-direction: column;
         justify-content: space-around;
-
-
-        .articulosPrincipales{
-            margin: 1rem;
-        }
 
         .card{
             .card-header{
                 .opiniones-img{
                     margin: .3rem;
                     border-radius:1rem;
-                    width: 350px;
-                    height: 350px;
+                    width: auto;
+                    height: auto;
                 }
             }
             .card-body {
@@ -752,40 +744,52 @@ $h5: 1.7rem;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 20rem;
+    padding: 1rem;
+    width: auto;
+    height: 10rem;
     border-top: 0.3rem solid #000000;
     border-bottom: 0.3rem solid #000000;
     align-items: center;
-    text-align: center;
 
     .redes{
         flex: 1;
         display: flex;
+        flex-direction: row;
         height: auto;
+        padding: 1rem;
         list-style-type: none;
+    }
+    .creador{
+        flex: 1;
+        text-align: center;
+        border-left: 2px solid #000000;
+        padding: .8rem;
+        .creador__h4{
+            font-size: $h4;
+            padding: 0.2rem;
+        }
     }
 }
 
 /* ALTO, DIRECCIÓN Y ESTILO */
-@media (min-width: 280px){
+@media (min-width: 480px){
     .footer{
         height: 15rem;
-        .redes .redes__lista{
-            transition-timing-function: ease;
-            transition: .2s;
-            padding: 1rem;
+        .redes {
+            justify-content: center;
+            .redes__lista{
+                transition-timing-function: ease;
+                transition: .2s;
+                padding: 1rem;
+            }
         }
         .redes .redes__lista:hover{
             transform: scale(1.1,1.1);
         }
+
         .creador{
-            flex: 1;
-            border-left: 2px solid #000000;
-        }
-        .creador__h4{
-            font-size: $h4;
-            padding: 0.2rem;
+            padding: 1rem;
+            margin: 1rem;
         }
     }
 }
